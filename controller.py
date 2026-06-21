@@ -9,13 +9,16 @@ def main():
         choice = input("> ")
 
         if choice == "1":
-            pass
+            model.get_new_record(base_lst)
 
         elif choice == "2":
             model.record_to_file("data.json", base_lst)
 
         elif choice == "3":
             base_lst = model.load_from_json_file("data.json")
+        
+        elif choice == "4":
+            model.show_lst(base_lst)
 
         elif choice == "5":
             print("Завершение программы...")
