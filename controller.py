@@ -19,16 +19,16 @@ def main():
 
 
         elif choice == "3":
-            record_to_file("data.json", data)
+            show_records(data)
 
 
         elif choice == "4":
-            data = load_from_json_file("data.json")
-            
+            record_to_file("data.json", data)
+
 
         elif choice == "5":
-            show_records(data)
-
+            data = load_from_json_file("data.json")
+        
 
         elif choice == "6":
             print("Завершение программы...")
