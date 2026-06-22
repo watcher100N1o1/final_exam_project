@@ -23,6 +23,10 @@ bash:
 - git clone https://github.com/watcher100N1o1/password_manager.git
 - cd password_manager
 - python controller.py
+  
+  или
+
+- python3 controller.py
 
 # Как пользоваться:
 При запуске программы будет выведено меню
