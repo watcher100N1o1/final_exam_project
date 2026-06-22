@@ -198,6 +198,7 @@ bash:
 
 # Архитектура:
 final_exam_project
+
 ├──model/ # Модели данных (PasswordRecord и прочее)
 
 ├── view/ # Вывод в консоль
