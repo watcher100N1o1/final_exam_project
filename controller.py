@@ -1,26 +1,40 @@
-import model
+
+from model import create_record, delete_record, show_records, record_to_file, load_from_json_file
 from view import show_menu
 
 def main():
-    base_lst = []
+    data = []
     while True:
         show_menu()
 
         choice = input("> ")
 
+
         if choice == "1":
-            pass
+            create_record(data)
+
 
         elif choice == "2":
-            model.record_to_file("data.json", base_lst)
+            delete_record(data)
+
 
         elif choice == "3":
-            base_lst = model.load_from_json_file("data.json")
+            show_records(data)
+
+
+        elif choice == "4":
+            record_to_file("data.json", data)
+
 
         elif choice == "5":
+            data = load_from_json_file("data.json")
+        
+
+        elif choice == "6":
             print("Завершение программы...")
             print("Всего доброго!")
             break
+
 
         else:
             print("Ошибка: невершная команда!")
